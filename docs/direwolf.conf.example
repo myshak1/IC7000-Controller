@@ -1,0 +1,24 @@
+# Dire Wolf configuration for IC7000 Controller
+# Copy to ~/direwolf.conf and adjust ADEVICE and MYCALL.
+
+# USB sound card connected to the IC-7000 data / mic port.
+# List cards with:  arecord -l
+ADEVICE plughw:1,0
+ACHANNELS 1
+
+CHANNEL 0
+MYCALL N0CALL
+MODEM 1200
+
+# PTT is keyed by IC7000 Controller over CI-V, so no PTT line here.
+# FULLDUP ON makes Dire Wolf send immediately instead of waiting for a clear
+# channel (the app has already keyed the radio when the frame arrives).
+FULLDUP ON
+
+# Timing must match DW_TXDELAY / DW_TXTAIL in backend.py (units of 10 ms)
+TXDELAY 30
+TXTAIL 10
+
+# KISS TCP endpoint used by the app (kiss_port in config.json)
+KISSPORT 8001
+AGWPORT 8000

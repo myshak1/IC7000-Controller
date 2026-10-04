@@ -1,0 +1,13 @@
+# personal station data
+config.json
+memories.json
+memories.json.tmp
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# logs
+*.log

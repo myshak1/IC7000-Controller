@@ -1,0 +1,16 @@
+{
+  "_comment": "Copy to config.json and fill in your station data. config.json is ignored by git.",
+  "callsign": "N0CALL",
+  "locator": "AA00aa",
+  "lat": 0.0,
+  "lon": 0.0,
+  "aprs_symbol_table": "/",
+  "aprs_symbol": "-",
+  "aprs_path": ["WIDE1-1", "WIDE2-1"],
+  "aprs_tocall": "APZIC7",
+  "kiss_host": "127.0.0.1",
+  "kiss_port": 8001,
+  "fldigi_url": "http://127.0.0.1:7362",
+  "direwolf_conf": "~/direwolf.conf",
+  "direwolf_log": "~/direwolf.log"
+}
